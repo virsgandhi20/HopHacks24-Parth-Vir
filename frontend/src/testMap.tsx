@@ -9,7 +9,7 @@ import {
 import HospitalRadialChart from './FilteredHospitalsVisualization';  // Import the radial chart component
 
 // Define your Google Maps API key
-const API_KEY = 'AIzaSyChSikYbVghK-lTIHMu2scvuamSOTVnBb0';
+const API_KEY = 'Your_API_Key';
 
 interface Hospital {
   name: string;
