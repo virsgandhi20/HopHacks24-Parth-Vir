@@ -1,0 +1,51 @@
+# WiFi Device Counter Setup Instructions
+
+This guide will help you set up and run the script that detects devices connected to your Mac or WiFi network. Follow the steps based on your operating system (macOS or Windows).
+
+---
+
+## Section 1: macOS Instructions
+
+### 1.1 Install Dependencies
+To use the script on macOS, you need to install the necessary network scanning tools and Python.
+
+1. **Install `arp-scan` via Homebrew**:
+   - If you don’t have **Homebrew** installed, first install it:
+     ```bash
+     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+     ```
+
+2. **Install `arp-scan`**:
+   ```bash
+   brew install arp-scan
+
+
+3. **Install Python**:
+   - If you don’t have Python installed, download and install it from the [official website](https://www.python.org/downloads/).
+
+   python3 --version
+   
+   If you don not have python, run this terminal command:
+   brew install python3
+
+4. Check Wifi Interface
+    ifconfig
+
+5. Run the script
+    sudo python3 wifi_device_counter.py
+
+Section for Windows Instructions
+
+wsl --install
+
+sudo apt-get update
+
+sudo apt-get install arp-scan
+
+python3 --version
+
+sudo apt-get install python3
+
+cd /path/to/your/script/
+
+sudo python3 wifi_device_counter.py
